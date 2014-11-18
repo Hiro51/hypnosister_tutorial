@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		4514C1181A1B2D4500346D76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514C1171A1B2D4500346D76 /* main.m */; };
 		4514C11B1A1B2D4500346D76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514C11A1A1B2D4500346D76 /* AppDelegate.m */; };
-		4514C11E1A1B2D4500346D76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514C11D1A1B2D4500346D76 /* ViewController.m */; };
-		4514C1211A1B2D4500346D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4514C11F1A1B2D4500346D76 /* Main.storyboard */; };
 		4514C1231A1B2D4500346D76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4514C1221A1B2D4500346D76 /* Images.xcassets */; };
 		4514C1261A1B2D4500346D76 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4514C1241A1B2D4500346D76 /* LaunchScreen.xib */; };
 		4514C1321A1B2D4500346D76 /* Hypnosister_tutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514C1311A1B2D4500346D76 /* Hypnosister_tutorialTests.m */; };
@@ -32,9 +30,6 @@
 		4514C1171A1B2D4500346D76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4514C1191A1B2D4500346D76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4514C11A1A1B2D4500346D76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4514C11C1A1B2D4500346D76 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4514C11D1A1B2D4500346D76 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4514C1201A1B2D4500346D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4514C1221A1B2D4500346D76 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4514C1251A1B2D4500346D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4514C12B1A1B2D4500346D76 /* Hypnosister_tutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hypnosister_tutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,9 +78,6 @@
 			children = (
 				4514C1191A1B2D4500346D76 /* AppDelegate.h */,
 				4514C11A1A1B2D4500346D76 /* AppDelegate.m */,
-				4514C11C1A1B2D4500346D76 /* ViewController.h */,
-				4514C11D1A1B2D4500346D76 /* ViewController.m */,
-				4514C11F1A1B2D4500346D76 /* Main.storyboard */,
 				4514C1221A1B2D4500346D76 /* Images.xcassets */,
 				4514C1241A1B2D4500346D76 /* LaunchScreen.xib */,
 				4514C1151A1B2D4500346D76 /* Supporting Files */,
@@ -199,7 +191,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4514C1211A1B2D4500346D76 /* Main.storyboard in Resources */,
 				4514C1261A1B2D4500346D76 /* LaunchScreen.xib in Resources */,
 				4514C1231A1B2D4500346D76 /* Images.xcassets in Resources */,
 			);
@@ -219,7 +210,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4514C11E1A1B2D4500346D76 /* ViewController.m in Sources */,
 				4514C11B1A1B2D4500346D76 /* AppDelegate.m in Sources */,
 				4514C1181A1B2D4500346D76 /* main.m in Sources */,
 			);
@@ -244,14 +234,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4514C11F1A1B2D4500346D76 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4514C1201A1B2D4500346D76 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4514C1241A1B2D4500346D76 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
