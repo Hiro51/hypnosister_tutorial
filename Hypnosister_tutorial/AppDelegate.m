@@ -18,17 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-                   CGRect firstFrame = CGRectMake(160, 240, 100, 150);
+                   CGRect firstFrame = self.window.bounds;
                    
                    BNRHyponesisView *firstView = [[BNRHyponesisView alloc] initWithFrame:firstFrame];
                    firstView.backgroundColor = [UIColor redColor];
                    
                    [self.window addSubview:firstView];
-    
-                    CGRect secondFrame = CGRectMake(20, 30, 50, 50);
-                    BNRHyponesisView *secondView = [[BNRHyponesisView alloc] initWithFrame:secondFrame];
-                    secondView.backgroundColor = [UIColor blueColor];
-                    [firstView addSubview:secondView];
     
                    self.window.backgroundColor = [UIColor whiteColor];
                    [self.window makeKeyAndVisible];
