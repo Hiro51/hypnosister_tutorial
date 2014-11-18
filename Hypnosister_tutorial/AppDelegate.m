@@ -24,7 +24,12 @@
                    firstView.backgroundColor = [UIColor redColor];
                    
                    [self.window addSubview:firstView];
-                   
+    
+                    CGRect secondFrame = CGRectMake(20, 30, 50, 50);
+                    BNRHyponesisView *secondView = [[BNRHyponesisView alloc] initWithFrame:secondFrame];
+                    secondView.backgroundColor = [UIColor blueColor];
+                    [self.window addSubview:secondView];
+    
                    self.window.backgroundColor = [UIColor whiteColor];
                    [self.window makeKeyAndVisible];
                    
