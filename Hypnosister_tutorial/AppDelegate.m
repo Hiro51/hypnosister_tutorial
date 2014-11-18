@@ -21,7 +21,6 @@
                    CGRect firstFrame = self.window.bounds;
                    
                    BNRHyponesisView *firstView = [[BNRHyponesisView alloc] initWithFrame:firstFrame];
-                   firstView.backgroundColor = [UIColor redColor];
                    
                    [self.window addSubview:firstView];
     

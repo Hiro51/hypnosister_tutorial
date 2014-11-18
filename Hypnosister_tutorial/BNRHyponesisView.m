@@ -10,6 +10,15 @@
 
 @implementation BNRHyponesisView
 
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if(self){
+        // All BNRHyponesisViews start with a clear background color
+        self.backgroundColor = [UIColor clearColor];
+    }
+    return self;
+}
+
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -30,6 +39,9 @@
     
     // Configure line width to 10 points
     path.lineWidth = 10;
+    
+    // Configure line color to light gray
+    [[UIColor lightGrayColor] setStroke];
     
     // Draw the line!
     [path stroke];
