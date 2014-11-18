@@ -12,6 +12,7 @@
 		4514C1231A1B2D4500346D76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4514C1221A1B2D4500346D76 /* Images.xcassets */; };
 		4514C1261A1B2D4500346D76 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4514C1241A1B2D4500346D76 /* LaunchScreen.xib */; };
 		4514C1321A1B2D4500346D76 /* Hypnosister_tutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514C1311A1B2D4500346D76 /* Hypnosister_tutorialTests.m */; };
+		4514C13D1A1B337800346D76 /* BNRHyponesisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514C13C1A1B337800346D76 /* BNRHyponesisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 		4514C12B1A1B2D4500346D76 /* Hypnosister_tutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hypnosister_tutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4514C1301A1B2D4500346D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4514C1311A1B2D4500346D76 /* Hypnosister_tutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hypnosister_tutorialTests.m; sourceTree = "<group>"; };
+		4514C13B1A1B337800346D76 /* BNRHyponesisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHyponesisView.h; sourceTree = "<group>"; };
+		4514C13C1A1B337800346D76 /* BNRHyponesisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHyponesisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 			children = (
 				4514C1191A1B2D4500346D76 /* AppDelegate.h */,
 				4514C11A1A1B2D4500346D76 /* AppDelegate.m */,
+				4514C13B1A1B337800346D76 /* BNRHyponesisView.h */,
+				4514C13C1A1B337800346D76 /* BNRHyponesisView.m */,
 				4514C1221A1B2D4500346D76 /* Images.xcassets */,
 				4514C1241A1B2D4500346D76 /* LaunchScreen.xib */,
 				4514C1151A1B2D4500346D76 /* Supporting Files */,
@@ -212,6 +217,7 @@
 			files = (
 				4514C11B1A1B2D4500346D76 /* AppDelegate.m in Sources */,
 				4514C1181A1B2D4500346D76 /* main.m in Sources */,
+				4514C13D1A1B337800346D76 /* BNRHyponesisView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
