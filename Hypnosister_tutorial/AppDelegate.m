@@ -23,15 +23,19 @@
     CGRect screenRect = self.window.bounds;
     CGRect bigRect = screenRect;
     bigRect.size.width *= 2.0;
-    bigRect.size.height *=2.0;
     
     // Create a screen-sized scroll view and add it to the window
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:screenRect];
     [self.window addSubview:scrollView];
     
-    // Create a super-sized hypneosis view and add it to the scroll view
-    BNRHyponesisView *hypnosisView = [[BNRHyponesisView alloc] initWithFrame:bigRect];
+    // Create a screen-sized hypneosis view and add it to the scroll view
+    BNRHyponesisView *hypnosisView = [[BNRHyponesisView alloc] initWithFrame:screenRect];
     [scrollView addSubview:hypnosisView];
+    
+    // Add a second screen-sized hyponosis view just off screen to the right
+    screenRect.origin.x += screenRect.size.width;
+    BNRHyponesisView *anotherView = [[BNRHyponesisView alloc] initWithFrame:screenRect];
+    [scrollView addSubview:anotherView];
     
     // Tell the scroll view how big its content area is
     scrollView.contentSize = bigRect.size;
