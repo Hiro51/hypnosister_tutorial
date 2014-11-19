@@ -18,14 +18,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-                   CGRect firstFrame = self.window.bounds;
-                   
-                   BNRHyponesisView *firstView = [[BNRHyponesisView alloc] initWithFrame:firstFrame];
-                   
-                   [self.window addSubview:firstView];
     
-                   self.window.backgroundColor = [UIColor whiteColor];
-                   [self.window makeKeyAndVisible];
+    // Create CGRects for frames
+    CGRect screenRect = self.window.bounds;
+    CGRect bigRect = screenRect;
+    bigRect.size.width *= 2.0;
+    bigRect.size.height *=2.0;
+    
+    // Create a screen-sized scroll view and add it to the window
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:screenRect];
+    [self.window addSubview:scrollView];
+    
+    // Create a super-sized hypneosis view and add it to the scroll view
+    BNRHyponesisView *hypnosisView = [[BNRHyponesisView alloc] initWithFrame:bigRect];
+    [scrollView addSubview:hypnosisView];
+    
+    // Tell the scroll view how big its content area is
+    scrollView.contentSize = bigRect.size;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
                    
     // Override point for customization after application launch.
     return YES;
